@@ -49,7 +49,7 @@ function RegisterForm() {
 
     setLoading(true);
     try {
-      const response = await axiosInstance.post(`/auth/register`, formData);
+      const response = await axiosInstance.post("/auth/register", formData);
       console.log("Response:", response.data);
 
       console.log("token", response?.data?.data.newUser?.token);
